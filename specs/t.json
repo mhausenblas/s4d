@@ -1,8 +1,8 @@
 {
 	"id": "/peek",
 	"cmd": "env >index.html && python3 -m http.server 8080",
-	"cpus": 0.1,
-	"mem": 32.0,
+	"cpus": 0.5,
+	"mem": 100,
 	"container": {
 		"type": "DOCKER",
 		"docker": {
