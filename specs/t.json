@@ -1,6 +1,6 @@
 {
 	"id": "/peek",
-	"cmd": "echo VERSION 3 >index.html && python3 -m http.server 8080",
+	"cmd": "echo test 8 >index.html && python3 -m http.server 8080",
 	"cpus": 0.5,
 	"mem": 100,
 	"container": {
