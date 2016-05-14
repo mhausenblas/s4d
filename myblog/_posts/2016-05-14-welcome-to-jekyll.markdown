@@ -5,3 +5,5 @@ date:   2016-05-14 05:54:39 +0100
 categories: dcos update
 ---
 This is my first blog post, using [DC/OS](https://dcos.io) and [dploy](http://dploy.sh) to publish.
+
+And now I've pushed to deploy. I hope.
