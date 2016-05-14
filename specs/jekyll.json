@@ -1,0 +1,32 @@
+{
+	"id": "/dployex/blog2go",
+	"cmd": "curl -OsL https://github.com/mhausenblas/s4d/archive/blog2go.zip && unzip blog2go.zip && cd s4d-blog2go/examples/blog2go/myblog/ && jekyll serve",
+	"cpus": 0.2,
+	"mem": 128,
+	"container": {
+		"type": "DOCKER",
+		"docker": {
+			"image": "jekyll/jekyll:3.1.3",
+			"network": "BRIDGE",
+			"portMappings": [
+				{
+					"containerPort": 4000,
+					"hostPort": 0
+				}
+			]
+		}
+	},
+	"healthChecks": [
+		{
+			"protocol": "TCP",
+			"gracePeriodSeconds": 600,
+			"intervalSeconds": 30,
+			"portIndex": 0,
+			"timeoutSeconds": 10,
+			"maxConsecutiveFailures": 2
+		}
+	],
+	"acceptedResourceRoles": [
+		"slave_public"
+	]
+}
