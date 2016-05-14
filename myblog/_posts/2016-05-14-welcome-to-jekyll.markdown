@@ -6,4 +6,4 @@ categories: dcos update
 ---
 This is my first blog post, using [DC/OS](https://dcos.io) and [dploy](http://dploy.sh) to publish.
 
-And now I've pushed to deploy. I hope.
+And now I've pushed to deploy. I hope. Again.
